@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Interest</title>
+</head>
+<body>
+    <button class="page-linker" id="color-switch-btn">Switch Text Color!</button>
+    <div class="hero">
+        <div class="course-content-container">
+            <h1 class="changeable-text">Some of my interest</h1>
+            <div class="course-content">
+                <img class="course-content-img" alt="play games" src="https://singularityhub.com/wp-content/uploads/2018/11/young-gamer-playing-video-game_shutterstock_624801452.jpg">
+                <h3 class="changeable-text">Video Games</h3>
+                <p class="changeable-text">
+                    During my free time I love to play video games to relax and enjoy for a little while.
+                </p>
+            </div>
+
+            <div class="course-content">
+                <img class="course-content-img" alt="headache" src="https://media.discordapp.net/attachments/1031057018250862592/1077044789192708198/5C4AFED0-F717-4AEA-B6E9-97218756C881.jpg?width=440&height=587">
+                <h3 class="changeable-text">Travel</h3>
+                <p class="changeable-text">
+                    Going out with group of friends, having fun and travel together.
+                </p>
+            </div>
+        </div>
+
+        <a href="index.html"><button class="page-linker">Back to Home</button></a>
+    </div>
+
+    <script>
+        $("#color-switch-btn").click(function() {
+          var currentColor = $(".changeable-text").css("color");
+          console.log(currentColor);
+          if (currentColor === "rgb(233, 210, 192)") {
+            $(".changeable-text").css("color", "#1f2041");
+          } else {
+            $(".changeable-text").css("color", "rgb(233, 210, 192)");
+          }
+        });
+    </script>
+</body>
+</html>
