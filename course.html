@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Course Taken</title>
+</head>
+<body>
+    <button class="page-linker" id="color-switch-btn">Switch Text Color!</button>
+    <div class="hero">
+        <div class="course-content-container">
+            <h1 class="changeable-text">Some course highlight</h1>
+            <div class="course-content">
+                <img class="course-content-img" alt="headache" src="https://img.freepik.com/premium-vector/boys-man-people-having-headache-migraine-stress-depression-frustration-anger-expression-sickness-concept-isolated-illustration-flat-cartoon-style-health-medical_136070-80.jpg?w=2000">
+                <h3 class="changeable-text">CSCI 15000</h3>
+                <p class="changeable-text">
+                    Taken CSCI 150 back during my sophomore year in Hunter college, and is one of my most hatted course.
+                </p>
+            </div>
+
+            <div class="course-content">
+                <img class="course-content-img" alt="headache" src="https://visualgo.net/img/png/bst.png">
+                <h3 class="changeable-text">CSCI 33500</h3>
+                <p class="changeable-text">
+                    Has just finish this course last semester. During this course I have learned the concepts of various data structure.
+                </p>
+            </div>
+
+            <div class="course-content">
+                <img class="course-content-img" alt="headache" src="https://img.freepik.com/free-vector/web-development-seo-concept-design-cartoon-character-flat-style_1362-164.jpg">
+                <h3 class="changeable-text">CSCI 39548</h3>
+                <p class="changeable-text">
+                    Taking this course as of right now! Exciting course and look forward to learn more.
+                </p>
+            </div>
+        </div>
+
+        <h1 class="changeable-text">Course Plan</h1>
+        <table class="course-table">
+            <tr>
+                <th class="changeable-text">Semester</th>
+                <th class="changeable-text">Courses</th>
+            </tr>
+            <tr>
+                <td class="course-table-data changeable-text">Fall 2023</td>
+                <td class="course-table-data changeable-text">CSCI 340, CS Elective</td>
+            </tr>
+            <tr>
+                <td class="course-table-data changeable-text">Spring 2024</td>
+                <td class="course-table-data changeable-text">CSCI 499, CS Elective, CS Elective</td>
+            </tr>
+        </table>
+
+        <a href="index.html"><button class="page-linker">Back to Home</button></a>
+    </div>
+
+    <script>
+        $("#color-switch-btn").click(function() {
+          var currentColor = $(".changeable-text").css("color");
+          console.log(currentColor);
+          if (currentColor === "rgb(233, 210, 192)") {
+            $(".changeable-text").css("color", "#1f2041");
+          } else {
+            $(".changeable-text").css("color", "rgb(233, 210, 192)");
+          }
+        });
+    </script>
+</body>
+</html>
